@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About, sample policies, frequently asked questions, and a demo contact form for Style Nest.">
+    <title>Services & Help | Style Nest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="announcement">Discover your style with Style Nest</div>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html#home">Style Nest<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="main-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="index.html#products">Dresses</a></li>
+                <li><a href="service.html" aria-current="page">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a class="cart-link" href="index.html#cart" aria-label="Shopping cart, 0 items">Cart <span class="cart-count" data-cart-count>0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-main service-page">
+        <div class="page-heading"><p class="eyebrow">WE ARE HERE TO HELP</p><h1>Services & Help</h1><p>Helpful information for this Style Nest frontend demonstration.</p></div>
+
+        <section class="content-section" id="about">
+            <p class="eyebrow">OUR STORY</p><h2>About Style Nest</h2>
+            <p>Style Nest is a sample women's fashion storefront created as a learning project. Explore the collection, add dresses to a browser-based cart, and try a checkout demonstration. It is not a live store.</p>
+        </section>
+
+        <section class="content-section" id="faq">
+            <p class="eyebrow">QUICK ANSWERS</p><h2>Frequently Asked Questions</h2>
+            <details><summary>How can I place an order?</summary><p>Add a dress to your cart, continue to delivery details, and choose one of the demonstration payment methods. No real order is placed.</p></details>
+            <details><summary>How can I select a dress size?</summary><p>Choose a size from the product card or open View Details to select a size and colour before adding the dress.</p></details>
+            <details><summary>How can I contact customer support?</summary><p>Use the demo contact form below. It displays a confirmation in your browser and does not send your message.</p></details>
+            <details><summary>How can I cancel a demonstration order?</summary><p>The checkout does not send an order to a store, so there is no real order to cancel. The cart is cleared after the demo confirmation.</p></details>
+        </section>
+
+        <section class="content-section" id="shipping">
+            <p class="eyebrow">SAMPLE INFORMATION</p><h2>Shipping Information</h2>
+            <p>This section is sample content for the website layout. A real store would add its confirmed delivery areas, time estimates, and fees here. This demonstration does not arrange shipping.</p>
+        </section>
+
+        <section class="content-section" id="returns">
+            <p class="eyebrow">DEMONSTRATION POLICY</p><h2>Returns and Exchanges</h2>
+            <p>This is an example policy area only. No purchases are made through this project, so it cannot accept or process returns or exchanges.</p>
+        </section>
+
+        <section class="contact-layout" id="contact">
+            <div><p class="eyebrow">SEND A NOTE</p><h2>Contact Us</h2><p>Try the form to see its validation and confirmation message. Your message stays in this page and is not sent to a server.</p><p class="placeholder-contact"><strong>Placeholder email:</strong> hello@example.com</p><p class="placeholder-contact">No real phone number or business address is provided.</p></div>
+            <form class="panel-form" id="contact-form" novalidate>
+                <div class="form-field"><label for="contact-name">Name <span>*</span></label><input id="contact-name" name="name" type="text" autocomplete="name" required></div>
+                <div class="form-field"><label for="contact-email">Email <span>*</span></label><input id="contact-email" name="email" type="email" autocomplete="email" required></div>
+                <div class="form-field"><label for="contact-subject">Subject <span>*</span></label><input id="contact-subject" name="subject" type="text" required></div>
+                <div class="form-field"><label for="contact-message-field">Message <span>*</span></label><textarea id="contact-message-field" name="message" rows="5" required></textarea></div>
+                <p class="form-message" id="contact-message" aria-live="polite"></p>
+                <button class="shop-btn" type="submit">Submit Demo Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer"><p class="copyright">&copy; 2026 Style Nest. Frontend demonstration only.</p></footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enter delivery details for a Style Nest checkout demonstration.">
+    <title>Delivery Details | Style Nest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="announcement">Discover your style with Style Nest</div>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html#home">Style Nest<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="main-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="index.html#products">Dresses</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a class="cart-link" href="index.html#cart" aria-label="Shopping cart, 0 items">Cart <span class="cart-count" data-cart-count>0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-main">
+        <div class="page-heading"><p class="eyebrow">DEMO CHECKOUT · 1 OF 2</p><h1>Delivery Details</h1><p>Your information is used only for this browser-session demonstration.</p></div>
+        <div class="checkout-layout">
+            <form class="panel-form" id="purchase-form" novalidate>
+                <h2>Where should this demo order go?</h2>
+                <div class="form-grid">
+                    <div class="form-field full-width"><label for="full-name">Full Name <span>*</span></label><input id="full-name" name="fullName" type="text" autocomplete="name" required></div>
+                    <div class="form-field"><label for="mobile">Mobile Number <span>*</span></label><input id="mobile" name="mobile" type="tel" inputmode="numeric" autocomplete="tel" maxlength="10" placeholder="10 digits" required></div>
+                    <div class="form-field"><label for="email">Email Address <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="form-field full-width"><label for="address">Address <span>*</span></label><textarea id="address" name="address" rows="3" autocomplete="street-address" required></textarea></div>
+                    <div class="form-field"><label for="city">City <span>*</span></label><input id="city" name="city" type="text" autocomplete="address-level2" required></div>
+                    <div class="form-field"><label for="state">State <span>*</span></label><input id="state" name="state" type="text" autocomplete="address-level1" required></div>
+                    <div class="form-field"><label for="pincode">PIN Code <span>*</span></label><input id="pincode" name="pincode" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="6" placeholder="6 digits" required></div>
+                </div>
+                <p class="form-message" id="purchase-message" aria-live="polite"></p>
+                <button class="shop-btn" type="submit">Continue to Payment</button>
+                <a class="back-link" href="index.html#cart">Back to Cart</a>
+            </form>
+            <aside class="order-panel">
+                <h2>Order Summary</h2>
+                <div class="summary-list" id="purchase-summary"></div>
+                <div class="summary-line summary-total"><span>Total</span><strong id="purchase-total">₹0</strong></div>
+                <p class="demo-note">Frontend demo only. No delivery request will be sent.</p>
+            </aside>
+        </div>
+    </main>
+    <footer class="site-footer"><p class="copyright">&copy; 2026 Style Nest. Frontend demonstration only.</p></footer>
+</body>
+</html>

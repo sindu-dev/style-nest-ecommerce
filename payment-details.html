@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose a demonstration payment method for your Style Nest demo order.">
+    <title>Demo Payment | Style Nest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="announcement">Discover your style with Style Nest</div>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html#home">Style Nest<span>.</span></a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="main-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="index.html#products">Dresses</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a class="cart-link" href="index.html#cart" aria-label="Shopping cart, 0 items">Cart <span class="cart-count" data-cart-count>0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-main">
+        <div class="page-heading"><p class="eyebrow">DEMO CHECKOUT · 2 OF 2</p><h1>Payment Details</h1><p>No real payment is collected on this page.</p></div>
+        <div class="checkout-layout">
+            <section class="panel-form">
+                <h2>Choose a demonstration method</h2>
+                <p class="delivery-summary-label">Delivery summary</p>
+                <p id="delivery-summary" class="delivery-summary">Loading delivery details...</p>
+                <form id="payment-form" novalidate>
+                    <fieldset class="payment-options">
+                        <legend>Payment option <span>*</span></legend>
+                        <label class="radio-option"><input type="radio" name="paymentMethod" value="Cash on Delivery"><span><strong>Cash on Delivery</strong><small>Demonstration selection only</small></span></label>
+                        <label class="radio-option"><input type="radio" name="paymentMethod" value="UPI (demonstration)"><span><strong>UPI</strong><small>Demonstration only. Do not enter a UPI ID or PIN.</small></span></label>
+                    </fieldset>
+                    <p class="form-message" id="payment-message" aria-live="polite"></p>
+                    <button class="shop-btn" type="submit">Place Demo Order</button>
+                </form>
+                <a class="back-link" href="purchase-details.html">Back to Delivery Details</a>
+                <p class="demo-note">This does not contact a payment provider or place a real order.</p>
+            </section>
+            <aside class="order-panel">
+                <h2>Order Summary</h2>
+                <div class="summary-list" id="payment-summary"></div>
+                <div class="summary-line summary-total"><span>Final payable amount</span><strong id="payment-total">₹0</strong></div>
+            </aside>
+        </div>
+    </main>
+    <footer class="site-footer"><p class="copyright">&copy; 2026 Style Nest. Frontend demonstration only.</p></footer>
+</body>
+</html>
